@@ -1,23 +1,23 @@
-let message = 'Hello JavaScript';
+let message = 'Hello JavaScript!';
 alert(message);
-message = 'Nice to see you!';
-alert(message);
+massege = 'Nise to see you!';
+alert(massege);
 
-let userAge = parseInt(prompt('Enter your age'));
+const userAge = parseInt(prompt('Ener your age'));
 alert('Your age is ' + userAge);
 
-const nextAge = userAge + 1;
-alert('Age next year= ' + nextAge);
+const nextAge = addOne(userAge);
+alert('Next year yuo will be ' + nextAge);
 
-// if (userAge >= 18 && userAge < 65) {
-  // alert('Your are adult'); {
-
- //  }
-// } else if (userAge >=65 ){
-   // alert('You are kids');
-// }
+if (userAge >= 18 && userAge < 65) {
+alert('You are adult');
+} else if (userAge < 18) {
+alert('Your are child');
+} else {
+alert('You are retired');
+}
 
 function addOne(value) {
-    const newValue = value +1;
+    const newValue = value + 1;
     return newValue;
 }
